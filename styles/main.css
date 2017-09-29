@@ -5,7 +5,7 @@
 body {
   background: #b3dbe8;
   color: #000;
-  font-family: sans-serif; /*   add fonts   */
+  font-family: 'Source Sans Pro', Helvetica, Calibiri, sans-serif; /*   add fonts   */
 }
 
 
@@ -47,7 +47,7 @@ aside {
 
 h1, h2 {
   margin: 0;
-  font-family: serif; /*   add fonts   */
+  font-family: 'Slabo 27px', Garamond, Cambria, serif; /*   add fonts   */
 }
 
 article h1 {
@@ -115,3 +115,13 @@ aside a:hover {
 
 
 /* put your media queries below */
+
+@media(max-width: 750px) {
+  body { margin: 0;}
+  #container {border-width: 0; margin:0;} /*put margin:0 to get rid of the weird blue bar on top and bottom*/
+  #top-image-container {display: none;}
+  article {float: none; width: 100%;}
+  aside {float: none; width: 100%; margin: 0;}
+  #sidebar2 {margin: 0;}
+
+}
